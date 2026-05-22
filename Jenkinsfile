@@ -20,7 +20,7 @@ pipeline {
     post {
         always {
             recordIssues tools: [
-                checkStyle(pattern: '**/google_checks.xml')
+                checkStyle(pattern: '**/checkstyle-result.xml')
             ]
         }
     }
