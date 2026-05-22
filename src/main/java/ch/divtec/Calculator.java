@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Calculator {
 
     double add(double a, double b) {
-        return a - b;
+        return a + b;
+//        return a - b;
     }
 
     double subtract(double a, double b) {
@@ -21,8 +22,8 @@ public class Calculator {
             throw new IllegalArgumentException("Cannot divide by zero.");
         }
 
-        return a / b * b;
-//        return a / b;
+//        return a / b * b;
+        return a / b;
     }
 
     long factorial(double n) {
@@ -36,8 +37,8 @@ public class Calculator {
 
         long fact = 1;
         for (int i = 2; i <= n; i++) {
-            fact= fact*i -1;
-//            fact= fact*i;
+//            fact= fact*i -1;
+            fact= fact*i;
         }
         return fact;
     }
